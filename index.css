@@ -1,43 +1,167 @@
-*{
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-#page-wrapper {
-    width: 80vw;
-    background-color: aqua;
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
+
 #container {
-    width: 100%;
     display: flex;
     flex-direction: row;
-   
 }
+
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: calc(1rem + 1vw);
+    text-align: left;
+}
+
+header h1 {
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: calc(0.9rem + 0.3vw);
+}
+
 
 nav {
     width: 30%;
-    background-color: lightgray;
-    height: 100vh;
-}
-nav ul{
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #34495e;
+    padding: calc(1.5rem + 0.5vw);
+    min-height: 100vh;
 }
 
-nav li{
-    
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #ecf0f1;
+    font-size: calc(0.9rem + 0.2vw);
+    display: block;
+    padding: 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2c3e50;
 }
 
 main {
-    height: 100vh;
     width: 70%;
+    padding: calc(2rem + 1vw);
+    text-align: center;
+    background-color: #ecf0f1;
+    min-height: 100vh;
+}
+
+main img {
+    max-width: 200px;
+    height: auto;
+    margin: calc(1rem + 0.5vw) 0;
+    border-radius: 8px;
+}
+
+main h5 {
+    font-size: calc(0.95rem + 0.3vw);
+    line-height: 1.8;
+    color: #2c3e50;
+    margin-top: calc(1rem + 0.5vw);
+    padding: calc(1rem + 0.5vw);
+    text-align: justify;
+}
+
+main ul {
+    list-style: none;
+    padding-left: 0;
+    margin: calc(1rem + 0.5vw) 0;
+    text-align: left;
+}
+
+main li {
+    border-left: 3px solid #2c3e50;
+    padding-left: 1rem;
+    margin: 0.75rem 0;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: calc(1rem + 0.5vw);
     text-align: center;
 }
 
-header, footer{
-    background-color: lightcoral;
+footer p {
+    font-size: calc(0.85rem + 0.2vw);
+}
 
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+    
+    #container {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 100%;
+        min-height: auto;
+        padding: calc(1rem + 0.5vw);
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    nav li {
+        margin: 0;
+    }
+    
+    nav a {
+        padding: 0.6rem 1rem;
+    }
+    
+    main {
+        width: 100%;
+    }
 }

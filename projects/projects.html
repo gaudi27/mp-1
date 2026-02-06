@@ -2,24 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="../index.css">
         <title>Projects | George Audi's Resume</title>
     </head>
     <body>
+        <header>
+            <h1>George Audi's Projects</h1>
+            <p>Welcome to my professional projects portfolio.</p>
         </header>
-        <nav>    
-            <ul>
-                <li><a href="../home/index.html">Home</a></li>
-                <li><a href="../employment/employment.html">Employment</a></li>
-                <li><a href="../education/education.html">Education</a></li>
-                <li><a href="../projects/projects.html">Projects</a></li>
-                <li><a href="../references/references.html">References</a></li>
-                <li><a href="../documents/documents.html">Documents</a></li>
-            </ul>
-        </nav>
-        <main>
+        <div id="container">
+            <nav>    
+                <ul>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../employment/employment.html">Employment</a></li>
+                    <li><a href="../education/education.html">Education</a></li>
+                    <li><a href="../projects/projects.html">Projects</a></li>
+                    <li><a href="../references/references.html">References</a></li>
+                    <li><a href="../documents/documents.html">Documents</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Projects</h2>
 
-        </main>
+                <div>
+                    <h3>Movie Recommender</h3>
+                    <p>Nov 2024 – Dec 2024 | Python, Flask, SQLite, SQLAlchemy, Docker, Bash, TMDB API</p>
+                    <ul>
+                        <li>Built a Flask-based web app that delivers personalized movie recommendations using the TMDB API.</li>
+                        <li>Implemented user authentication (account creation, login, password management) with secure data handling in SQLite via SQLAlchemy ORM.</li>
+                        <li>Delivered tailored suggestions based on genres, regions, and user-selected movies.</li>
+                        <li>Dockerized the app for consistent, cross-environment deployment.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Mass Emailer</h3>
+                    <p>June 2024 | Python, Tkinter, Gspread, Googleapiclient, Googleauth</p>
+                    <ul>
+                        <li>Developed a full-stack Python application with a Tkinter UI.</li>
+                        <li>Connected to Google Sheets via Gspread to manage recipient lists.</li>
+                        <li>Implemented email sending using Google APIs with proper authorization.</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
         <footer>    
             <p> All rights reserved &#169; 2026 George Audi <a href="credits.html">credits</a></p>
         </footer>
